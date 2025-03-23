@@ -1,0 +1,118 @@
+ /* 基本設定 */
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: #070426;
+    color: white;
+    padding: 20px 20px;
+    padding-top: 50px;
+}
+
+/* ヘッダー内のコンテナ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* タイトル（ウェブサイト名） */
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* ナビゲーションのスタイル */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  /* 横向きに配置 */
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.top {
+    width: 100%;  /* 画面幅の80%に調整 */
+    max-width: 1200px;  /* 最大600pxまで */
+    opacity: 0;                  /* 最初は透明 */
+    animation: fadeIn 3s ease-in forwards;  /* 2秒かけて表示 */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+main h1 {
+    text-align: center;
+    margin-top: 75px;
+}
+.text {
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-bottom: 75px;
+}
+.shop-info {
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.shop-info th, .shop-info td {
+    border: 1px solid #ffffff;
+    vertical-align: top;
+}
+.tenpo {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: #070426;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;   /* 中央揃え */
+    gap: 30px;                  /* 画像の間隔 */
+    margin-top: 40px;
+  }
+
+  .gallery img {
+    width: 200px;               /* 画像サイズ */
+    height: 200px;              /* 高さも揃える */
+    border-radius: 50%;         /* 丸く表示 */
+    object-fit: cover;          /* 枠に収める */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* ふんわり影 */
+    transition: transform 0.3s; /* ホバーアニメーション */
+  }
+
+  .gallery img:hover {
+    transform: scale(1.1);      /* ホバーで拡大 */
+  }
+.URL {
+    color: #ffffff;
+    text-decoration: underline;
+}
