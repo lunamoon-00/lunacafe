@@ -1,4 +1,4 @@
- /* 基本設定 */
+/* 基本設定 */
 body {
     font-family: serif;
     margin: 0;
@@ -77,15 +77,16 @@ main h1 {
 .shop-info {
     border-collapse: collapse;
     width: 1000px;
-    margin: 0 auto;
+    margin: 0;
     margin-bottom: 40px;
+    display: block;
 }
 .shop-info th, .shop-info td {
     border: 1px solid #ffffff;
     vertical-align: top;
 }
 .tenpo {
-    text-align: center;
+    text-align: left;
 }
 footer {
     text-align: center;
@@ -115,4 +116,30 @@ footer {
 .URL {
     color: #ffffff;
     text-decoration: underline;
+}
+/* モバイル対応 */
+@media (max-width: 767px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;  
+    }
+    main {
+        padding: 0;
+    }
+    .gallery img {
+        width: 100%;
+        max-width: 100px;    /* 最大サイズを指定 */
+        height: auto;
+        object-fit: cover;   /* 見切れを防止 */
+        display: block;
+        margin: 0 auto;
+    }
+    .shop-info {
+        width: 100%;
+            /* 最大サイズを指定 */
+        height: auto;
+        object-fit: cover;   /* 見切れを防止 */
+        display: block;
+        margin: 0 auto;
+    }
 }
