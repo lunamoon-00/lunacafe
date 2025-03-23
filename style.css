@@ -125,7 +125,8 @@ footer {
         padding-left: 90px;
     }
     main {
-        padding: 0;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .gallery img {
         width: 100%;
