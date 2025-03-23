@@ -122,6 +122,7 @@ footer {
     nav ul {
         flex-wrap: wrap;
         gap: 10px;  
+        padding-left: 90px;
     }
     main {
         padding: 0;
