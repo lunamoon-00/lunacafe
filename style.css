@@ -1,4 +1,4 @@
-/* 基本設定 */
+ /* 基本設定 */
 body {
     font-family: serif;
     margin: 0;
@@ -33,10 +33,8 @@ header h1 {
 /* ナビゲーションのスタイル */
 nav ul {
     list-style: none;
-    padding: 20px;
     margin: 0;
     display: flex; 
-    
 }
 nav ul li a {
     color: white;
@@ -53,7 +51,7 @@ nav ul li a:hover {
     max-width: 1200px;  
     opacity: 0;                  
     animation: fadeIn 3s ease-in forwards;  
-  }
+}
 
   @keyframes fadeIn {
     from {
@@ -101,8 +99,7 @@ footer {
     gap: 30px;                  
     margin-top: 40px;
   }
-
-  .gallery img {
+.gallery img {
     width: 200px;              
     height: 200px;              
     border-radius: 50%;        
@@ -110,15 +107,37 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s; 
   }
-
-  .gallery img:hover {
+.gallery img:hover {
     transform: scale(1.1);      
   }
 .URL {
     color: #ffffff;
     text-decoration: underline;
 }
-
+/* menu.html */
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;                      
+    max-width: 100%;                 
+    justify-content: center;         
+    align-items: center;             
+    box-sizing: border-box;         
+}
+.items img {
+    width: 100%;                     
+    max-width: 350px;                 
+    height: auto;                     
+    object-fit: cover;                
+    display: block;                   
+    margin: 0 auto;                  
+}
+.menu {
+    width: 100%; 
+    max-width: 1200px;  
+    opacity: 0;                  
+    animation: fadeIn 3s ease-in forwards;  
+}
 /* モバイル対応 */
 @media (max-width: 767px) {
     nav ul {
